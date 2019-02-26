@@ -54,18 +54,18 @@ https://ibm-cloud.github.io/tf-ibm-docs/index.html provides reference guides for
 - Create an empty directory.
 - Create a file sample.tf with the following definition.
 
-`resource "ibm_compute_vm_instance" "vm1" {`
-` hostname = "vm1"`
-` domain = "example.com"`
-` os_reference_code = "UBUNTU_16_64"`
-` datacenter = "dal03"`
-` network_speed = 10`
-` hourly_billing = true`
-` private_network_only = false`
-` cores = 1`
-` memory = 1024`
-` disks = [25] local_disk = false`
-`}`
+resource "ibm_compute_vm_instance" "vm1" {
+ hostname = "vm1" \
+ domain = "example.com" \
+ os_reference_code = "UBUNTU_16_64" \
+ datacenter = "dal03" \
+ network_speed = 10 \
+ hourly_billing = true \
+ private_network_only = false \
+ cores = 1 \
+ memory = 1024 \
+ disks = [25] local_disk = false \
+}
 
 ### Creating a VM
 
