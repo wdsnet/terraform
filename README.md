@@ -1,4 +1,4 @@
-###Terraform on IBM Cloud
+# Terraform on IBM Cloud
 
 - Ensure that the** $PATH** environment variable is updated to point to the terraform directory.
 On **Linux** or** Mac**, you need to add the following to your **~/.profile** or **~/.bashrc** or  **~/.bash_profile**
@@ -43,13 +43,13 @@ You must add all credentials listed in the terraform.tfvars file in order to com
 - SL_API_KEY is a SoftLayer API Key. Go to https://control.bluemix.net/account/user/profile, scroll down, and check Authentication Key.
 - BM_API_KEY – An API key for IBM Cloud services. If you don’t have one already, go to https://console.bluemix.net/iam/#/apikeys and create a new key.
 
-# Basic Terraform operation
+### Basic Terraform operation
 
 See https://www.terraform.io/docs/configuration/index.html for terraform configuration instructions. Especially, Configuration Syntax, Interpolation Syntax, Resources, Variables provide the major concepts.
 
 https://ibm-cloud.github.io/tf-ibm-docs/index.html provides reference guides for Terraform IBM plugin.
 
-# Creating a TF file 
+### Creating a TF file 
 
 - Create an empty directory.
 - Create a file sample.tf with the following definition.
@@ -67,7 +67,7 @@ https://ibm-cloud.github.io/tf-ibm-docs/index.html provides reference guides for
 ` disks = [25] local_disk = false`
 `}`
 
-# Creating a VM
+### Creating a VM
 
 Execute terraform init to initialize Terraform IBM plugin. You will get the following messages.
 
@@ -166,7 +166,7 @@ It will take a few minutes to complete the provisioning. You can check the detai
 
 After the completion of the virtual server provisioning, Terraform creates a terraform.tfstate file and saves information about the infrastructure configured, in this case the virtual server . You can inspect the contents of this file using a text editor.
 
-# Showing and updating resources
+### Showing and updating resources
 
 `$ terraform show`
 
@@ -191,7 +191,7 @@ Some VM configuration settings can be changed in IBM Cloud IaaS portal. Terrafor
 `$ terraform refresh`
 `$ terraform show`
 
-# Deleting resources
+### Deleting resources and VM
 
 Delete the virtual server using the terraform destroy command.
 
