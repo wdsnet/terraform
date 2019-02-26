@@ -54,7 +54,7 @@ https://ibm-cloud.github.io/tf-ibm-docs/index.html provides reference guides for
 - Create an empty directory.
 - Create a file sample.tf with the following definition.
 
-resource "ibm_compute_vm_instance" "vm1" {
+resource "ibm_compute_vm_instance" "vm1" { \
  hostname = "vm1" \
  domain = "example.com" \
  os_reference_code = "UBUNTU_16_64" \
@@ -92,45 +92,45 @@ Terraform will perform the following actions:
 
   + ibm_compute_vm_instance.vm1
 
-      id:                           <computed>
-      block_storage_ids.#:          <computed>
-      cores:                        "1"
-      datacenter:                   "dal03"
-      disks.#:                      "1"
-      disks.0:                      "25"
-      domain:                       "example.com"
-      file_storage_ids.#:           <computed>
-      hostname:                     "vm1"
-      hourly_billing:               "true"
-      ip_address_id:                <computed>
-      ip_address_id_private:        <computed>
-      ipv4_address:                 <computed>
-      ipv4_address_private:         <computed>
-      ipv6_address:                 <computed>
-      ipv6_address_id:              <computed>
-      ipv6_enabled:                 "false"
-      ipv6_static_enabled:          "false"
-      local_disk:                   "false"
-      memory:                       "1024"
-      network_speed:                "10"
-      os_reference_code:            "UBUNTU_16_64"
-      private_interface_id:         <computed>
-      private_network_only:         "false"
-      private_security_group_ids.#: <computed>
-      private_subnet:               <computed>
-      private_subnet_id:            <computed>
-      private_vlan_id:              <computed>
-      public_bandwidth_limited:     <computed>
-      public_bandwidth_unlimited:   "false"
-      public_interface_id:          <computed>
-      public_ipv6_subnet:           <computed>
-      public_ipv6_subnet_id:        <computed>
-      public_security_group_ids.#:  <computed>
-      public_subnet:                <computed>
-      public_subnet_id:             <computed>
-      public_vlan_id:               <computed>
-      secondary_ip_addresses.#:     <computed>
-      wait_time_minutes:            "90"
+      id:                           <computed> \
+      block_storage_ids.#:          <computed> \
+      cores:                        "1"        \
+      datacenter:                   "dal03"    \
+      disks.#:                      "1"        \
+      disks.0:                      "25"       \
+      domain:                       "example.com" \
+      file_storage_ids.#:           <computed>  \
+      hostname:                     "vm1"  \
+      hourly_billing:               "true" \
+      ip_address_id:                <computed> \
+      ip_address_id_private:        <computed> \
+      ipv4_address:                 <computed> \
+      ipv4_address_private:         <computed> \
+      ipv6_address:                 <computed> \
+      ipv6_address_id:              <computed> \
+      ipv6_enabled:                 "false" \
+      ipv6_static_enabled:          "false" \
+      local_disk:                   "false" \
+      memory:                       "1024" \
+      network_speed:                "10" \
+      os_reference_code:            "UBUNTU_16_64" \
+      private_interface_id:         <computed> \
+      private_network_only:         "false" \
+      private_security_group_ids.#: <computed> \
+      private_subnet:               <computed> \
+      private_subnet_id:            <computed> \
+      private_vlan_id:              <computed> \
+      public_bandwidth_limited:     <computed> \
+      public_bandwidth_unlimited:   "false" \
+      public_interface_id:          <computed> \
+      public_ipv6_subnet:           <computed> \
+      public_ipv6_subnet_id:        <computed> \
+      public_security_group_ids.#:  <computed> \
+      public_subnet:                <computed> \
+      public_subnet_id:             <computed> \
+      public_vlan_id:               <computed> \
+      secondary_ip_addresses.#:     <computed> \ 
+      wait_time_minutes:            "90" \
 
 Plan: 1 to add, 0 to change, 0 to destroy.
 
@@ -147,10 +147,10 @@ Resource actions are indicated with the following symbols:
 Terraform will perform the following actions:
 
   + ibm_compute_vm_instance.vm1
-      id:                           <computed>
-      block_storage_ids.#:          <computed>
-      cores:                        "1"
-      datacenter:                   "dal03"
+      id:                           <computed> \
+      block_storage_ids.#:          <computed> \
+      cores:                        "1" \
+      datacenter:                   "dal03" \
 
       ......
 
