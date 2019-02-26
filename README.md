@@ -3,11 +3,11 @@
 - Ensure that the** $PATH** environment variable is updated to point to the terraform directory.
 On **Linux** or** Mac**, you need to add the following to your **~/.profile** or **~/.bashrc** or  **~/.bash_profile**
 
-`export PATH=$PATH:$HOME/terraform`
+`$ export PATH=$PATH:$HOME/terraform`
 
 - Create a terraform directory
 
-`mkdir $HOME/terraform; cd terraform`
+`$ mkdir $HOME/terraform; cd terraform`
 
 - Download a terraform binary from  https://www.terraform.io/downloads.html and copy into the created directory
 
@@ -20,13 +20,13 @@ Download the latest version of the terraform-provider-ibm binary from https://gi
 
 - Create a .terraform.d/plugins directory in your user’s home directory and place the binary plugin file inside of it.
 
-`$mkdir $HOME/.terraform.d/plugins`
-`$mv $HOME/Downloads/terraform-provider-ibm     $HOME/.terraform.d/plugins/ `
+`$ mkdir $HOME/.terraform.d/plugins` \
+`$ mv $HOME/Downloads/terraform-provider-ibm     $HOME/.terraform.d/plugins/ `
 
 Test the terraform-provider-ibm plugin as well. You will get the following result.
 
-cd $HOME/.terraform.d/plugins
-./terraform-provider-ibm
+`$ cd $HOME/.terraform.d/plugins` \
+`$ ./terraform-provider-ibm`
 
 - Configure Terraform for IBM Cloud
 
@@ -188,7 +188,7 @@ Execute **terraform apply** to update the value of network_speed to 100.
 
 Some VM configuration settings can be changed in IBM Cloud IaaS portal. Terraform will detect these changes and revert them back to the planned confguration if required. Change the number of the processors to 2 in the IaaS portal from the Modify Device Configuration button on the Device Details page for the VM. Once the change is complete execute a terraform refresh. Terraform will get the updated virtual server information and update the terraform.tfstate file. Now a terraform show will display two processors as follows:
  
-`$ terraform refresh`
+`$ terraform refresh` \
 `$ terraform show`
 
 ### Deleting resources and VM
