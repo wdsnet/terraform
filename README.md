@@ -129,8 +129,8 @@ Terraform will perform the following actions:
       public_subnet:                <computed> \
       public_subnet_id:             <computed> \
       public_vlan_id:               <computed> \
-      secondary_ip_addresses.#:     <computed> \ 
-      wait_time_minutes:            "90" \
+      secondary_ip_addresses.#:     <computed>  
+      wait_time_minutes:            "90" 
 
 Plan: 1 to add, 0 to change, 0 to destroy.
 
@@ -149,8 +149,8 @@ Terraform will perform the following actions:
   + ibm_compute_vm_instance.vm1
       id:                           <computed> \
       block_storage_ids.#:          <computed> \
-      cores:                        "1" \
-      datacenter:                   "dal03" \
+      cores:                        "1" 
+      datacenter:                   "dal03" 
 
       ......
 
